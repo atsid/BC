@@ -238,6 +238,11 @@ fieldset[disabled] .btn-xl.active {
     background-color: #99002D;
 }
 
+.navbar-default .navbar-brand .tag-line {
+    display: none;
+}
+
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -254,10 +259,14 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: font-size .3s;
         transition: font-size .3s;
     }
-
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
+
+    .navbar-default .navbar-brand .tag-line {
+        display: inline-block;
+    }
+
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
@@ -456,15 +465,22 @@ section#contact .text-danger {
 }
 
 footer {
-    padding: 25px 0;
-    background-color: #99002D; /* red */
+    padding: 0;
+    background-color: #DFD4BC;
     text-align: center;
+}
+
+.panel-footer {
+    background-color: #DFD4BC;
 }
 
 footer span.copyright {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
+}
+footer .copyright-container {
+    margin-top: 12px;
 }
 
 footer ul.quicklinks {
